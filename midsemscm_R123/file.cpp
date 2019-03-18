@@ -11,7 +11,14 @@ class test
 	test(int x,inty)
 	{a=x;
 		b=y;
-	}
+	
+}
+test(test&obj)
+{
+	a=obj.a;
+	b=obj.b;
+}
+	
 };
 int main()
 {
@@ -19,4 +26,5 @@ int main()
 	cout<<t1.a;
 	cout<<t1.b;
 	test t2(4,5);
+	test t3(t2);
 }
